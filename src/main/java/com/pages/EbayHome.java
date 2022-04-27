@@ -14,7 +14,7 @@ public class EbayHome extends Base {
         super(driver);
     }
 
-    public void search(){
+    public void searchByBrandAndSelect(){
         wait(searchBox,5);
         click(searchBox);
 

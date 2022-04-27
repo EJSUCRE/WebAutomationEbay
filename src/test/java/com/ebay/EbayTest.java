@@ -26,7 +26,7 @@ public class EbayTest {
 
     @Test
     public void search() throws Exception{
-        ebayHome.search();
+        ebayHome.searchByBrandAndSelect();
         Assert.assertEquals("La cantidad no es mayor a 2mil unidades", true, ebayHome.inventarioAdidas());
     }
 
