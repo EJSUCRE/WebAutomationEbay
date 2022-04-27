@@ -18,7 +18,7 @@ public class Base {
         this.driver = driver;
     }
 
-    public WebDriver chromeDriverConnection(String browser){
+    public WebDriver driverConnection(String browser){
         if(browser.equalsIgnoreCase("Chrome")){
             System.setProperty("webdriver.chrome.driver","./src/drivers/chrome/chromedriver.exe");
             driver= new ChromeDriver();

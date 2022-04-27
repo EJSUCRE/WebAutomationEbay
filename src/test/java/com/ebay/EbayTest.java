@@ -13,7 +13,7 @@ public class EbayTest {
     @BeforeTest
     public void setUp() throws Exception{
         ebayHome = new EbayHome(driver);
-        driver = ebayHome.chromeDriverConnection("Chrome");//Send the word Chrome o Firefox to choose your preferred browser to execute the test
+        driver = ebayHome.driverConnection("Chrome");//Send the word Chrome o Firefox to choose your preferred browser to execute the test
         ebayHome.visit("https://www.ebay.com/");
         driver.manage().window().maximize();
 
